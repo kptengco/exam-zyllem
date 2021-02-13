@@ -1,0 +1,15 @@
+<div class="page-container">
+    <ng-container *ngIf="pageNotFound">
+        <div class="page-content">
+            <h1 class="page-code">404</h1>
+            <p class="page-message">Page not found.</p>
+        </div>
+    </ng-container>
+    
+    <ng-container *ngIf="pageError">
+        <div class="page-content">
+            <h1 class="page-code">503</h1>
+            <p class="page-message">Server error.</p>
+        </div>
+    </ng-container>
+</div>

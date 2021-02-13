@@ -1,0 +1,11 @@
+<div class="breadcrumb-container">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"
+            (click)="onRedirect(item.link)"
+            [ngClass]="{'link': hasRedirector(item)}"
+            *ngFor="let item of items">
+            <span class="label">{{item.label}}</span>
+            <span class="divider">{{separator}}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,41 @@
+<app-breadcrumb-component></app-breadcrumb-component>
+
+<ng-container *ngIf="loading">
+    <div class="article-placeholder">
+        <app-preloader-component></app-preloader-component>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="article.id">
+    <div class="article-content">
+        <div class="article-heading">
+            <div class="heading-item">
+                <p>Author: </p>
+                <p>{{article.author}}</p>
+            </div>
+    
+            <div class="heading-item">
+                <p>Published Date: </p>
+                <p>{{article.publishedAt | date: 'MMM dd, yyyy h:mm a'}}</p>
+            </div>
+        </div>
+    
+        <ng-container *ngIf="article.featureImgUrl">
+            <div class="article-image">
+                <img src="{{article.featureImgUrl}}" alt="{{article.title" />
+            </div>
+        </ng-container>
+    
+        <div class="article-detail" [innerHTML]="article.description"></div>
+    
+        <div class="article-others">
+            <p>Source: <a [href]="article.url" target="_newtab">{{article.url}}</a></p>
+        </div>
+    </div>
+</ng-container>
+
+<div class="article-footer-content">
+    <button type="button"
+        [routerLink]="['']"
+        class="btn-back btn-tertiary">Back</button>
+</div>

@@ -1,0 +1,41 @@
+:host {
+    outline: none;
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    
+        .card-image-container,
+        .card-background {
+            background-color: rgba(0,0,0,.6);
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    
+        .card-image-container {
+            text-align: center;
+            z-index: 1;
+    
+            .card-image {
+                height: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .card-background {
+            z-index: 2;
+        }
+    
+        .card-content {
+            display: flex;
+            flex-wrap: wrap;
+            color: var(--secondary-text);
+            min-height: 250px;
+            padding: 10px;
+            width: 100%;
+            z-index: 3;
+        }
+    }
+}

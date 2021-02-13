@@ -1,0 +1,36 @@
+:host {
+    .article-placeholder {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-content {
+        .article-heading {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .article-image {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .article-detail {
+            padding: 20px 4px;
+        }
+    }
+
+    .article-footer-content {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 20px;
+    }
+
+    ::ng-deep {
+        .breadcrumb-container > .breadcrumb {
+            padding: 10px 5px;
+        }
+    }
+}

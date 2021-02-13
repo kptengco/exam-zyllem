@@ -1,0 +1,28 @@
+<app-breadcrumb-component></app-breadcrumb-component>
+
+<app-tab-component></app-tab-component>
+
+<ng-container *ngIf="loading">
+    <div class="article-placeholder">
+        <app-preloader-component></app-preloader-component>
+    </div>
+</ng-container>
+
+<div class="article">
+    <div class="article-item" [ngClass]="{'featured': isFeatured(article.type)}" *ngFor="let article of filterArticle(articles)">
+        <div class="article-route" [routerLink]="[article.id]">
+            <app-card-component [card]="cardInput(article)">
+                <div class="article-content">
+                    <div class="article-content-item">
+                        <p>Author: </p>
+                        <p><em>{{article.author}}</em></p>
+                    </div>
+                    <div class="article-content-item">
+                        <p>Published Date: </p>
+                        <p><em>{{article.publishedAt | date: 'MMM dd, yyyy h:mm a'}}</em></p>
+                    </div>
+                </div>
+            </app-card-component>
+        </div>
+    </div>
+</div>

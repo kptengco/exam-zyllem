@@ -1,0 +1,22 @@
+:host {
+    .page-container {
+        position: relative;
+
+        .page-content {
+            align-items: center;
+            color: var(--secondary-text);
+            display: flex;
+            font-size: 3em;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+        }
+
+        .page-code {
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+}

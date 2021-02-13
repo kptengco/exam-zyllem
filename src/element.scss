@@ -1,0 +1,13 @@
+.btn-element {
+    border: solid 1px var(--gray-light);
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+.btn-tertiary {
+    background-color: var(--white);
+    color: var(--secondary-text);
+    @extend .btn-element;
+}

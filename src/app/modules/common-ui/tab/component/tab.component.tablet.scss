@@ -1,0 +1,11 @@
+:host {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .tab {
+            display: block;
+
+            .tab-item {
+                display: inline-block;
+            }
+        }
+    }
+}

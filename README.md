@@ -20,3 +20,9 @@ Recommend to use [Visual Studio Code](https://code.visualstudio.com/) and [Angul
 3. Run `npm install` to install all the dependencies need
 4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
 5. Enjoy the test and good luck
+
+Bonus Points:
+- Apply a nice template for the article list
+- Allow to filter by article type
+- Get real data from an API to replace our mock data
+- Apply angular router to show an article detail page when you open it from the list

@@ -1,0 +1,19 @@
+.header {
+    background-color: var(--white);
+    box-shadow: 0 0 4px 1px;
+    display: flex;
+
+    .header-nav {
+        display: flex;
+        padding: 10px;
+
+        .company-logo {
+            background: url(assets/images/logo.png) no-repeat center center;
+            background-size: 100%;
+            cursor: pointer;
+            min-height: 50px;
+            min-width: 110px;
+            outline: none;
+        }
+    }
+}

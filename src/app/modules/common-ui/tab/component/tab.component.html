@@ -1,0 +1,10 @@
+<div class="tab-container">
+    <ul class="tab" #tabRef>
+        <li class="tab-item"
+            [ngClass]="{'selected': tab.selected}"
+            (click)="changeTab(tab.code)"
+            *ngFor="let tab of tabs">
+            {{tab.label}}
+        </li>
+    </ul>
+</div>

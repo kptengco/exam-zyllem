@@ -1,0 +1,38 @@
+:host {
+    .breadcrumb-container {
+        .breadcrumb {
+            font-size: 18px;
+            list-style: none;
+            margin: 0;
+
+            .breadcrumb-item {
+                color: #777;
+                display: inline-block;
+            }
+
+            .breadcrumb-item.link {
+                cursor: pointer;
+            }
+
+            .breadcrumb-item .label,
+            .breadcrumb-item .divider {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .breadcrumb-item .divider {
+                font-size: 20px;
+                margin: 0 7px;
+            }
+
+            .breadcrumb-item:last-child {
+                color: var(--primary-text);
+                font-weight: 600;
+            }
+
+            .breadcrumb-item:last-child .divider {
+                display: none;
+            }
+        }
+    }
+}

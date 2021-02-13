@@ -1,0 +1,9 @@
+:host {
+    .content-wrapper {
+        padding: 10px 10px 60px;
+    }
+    
+    ::ng-deep .preloader.la-line-scale {
+        color: #64d6e2;
+    }
+}

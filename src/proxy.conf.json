@@ -1,0 +1,11 @@
+{
+    "/api/services/article/*": {
+        "target": "https://api.mocki.io/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/api/services/article/": ""
+        }
+    }
+}

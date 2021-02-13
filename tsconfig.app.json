@@ -5,7 +5,9 @@
     "types": []
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "assets/**/*.json",
+    "assets/**/*.(png|jpg)"
   ],
   "exclude": [
     "src/test.ts",
